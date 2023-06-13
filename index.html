@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hangman</title>
+  <style>
+    #hoverme {
+      width: 250px;
+      height: 250px;
+      background-color: ghostwhite;
+      border: 1px solid black;
+    }
+
+    footer {
+      text-align: center;
+      background: black;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <p>Choose Difficulty Level:</p>
+<!-- "levelOne()" is an onclick attribute that specifies a JavaScript function to be executed -->
+  <button type="button" id="levelone" onclick="levelOne()">Level One</button>
+  <button type="button" id="leveltwo" onclick="levelTwo()">Level Two</button>
+  <button type="button" id="levelthree" onclick="levelThree()">Level Three</button>
+  <button type="button" onclick="clearAll()">Clear</button>
+  <button type="button" onclick="restart()">Restart</button>
+  <button type="button" onclick="showAns()">Show Answer</button>
+  <p id="answer"></p>
+  <div id="box"></div>
+  <div id="name"></div>
+  <div style="margin-top: 200px;border: black 1px dotted;">
+    <button id="clickme">Check</button>
+    <div id="hoverme"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Hangman-0.png" id="hangman_img" />
+    </div>
+    <div id="demo"></div>
+  </div>
+
+
+
+
+  <!-- the addEventlistner will be like
+      document.addEventListener("click", myfunction); -->
+  <!--       the click is one of the event, which is in this link
+      https://www.w3schools.com/jsref/dom_obj_event.asp -->
+  <footer>Michael: Levels Catherine: Check Characters Rex: Hangman Image</footer>
+</body>
+<script src="script.js"></script>
+
+</html>
